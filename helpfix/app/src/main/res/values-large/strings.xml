@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">helpfix</string>
+    <string name="error_invalid_username">Plase Enter Username</string>
+    <string name="error_invalid_password">Plase Enter Password</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helpfix">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_helpfix"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="sensorPortrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".technician.Manage_repair_tech"
+            android:screenOrientation="sensorPortrait"></activity>
+        <activity android:name=".technician.Repairable_list_tech"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".technician.Pending_list_tech"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Detail_sentrequest_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Sent_requestlist"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Detail_work_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Work_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".technician.Detail_repair__technician"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".technician.Repair_notification_technician"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".technician.Assessment"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".technician.Assessment_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Sentapproval"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Sentapproval_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Detail_repair_notificationlist"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Repair_notification_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Assignment_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".head_division.Assignment"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".user.Create_issue"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".user.Detail_issuelist"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".manager.Detail_approvelist"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".manager.Approve_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".manager.Managepending"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".manager.Pending_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".include_help.Sentemail"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".user.Issue_list"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".manager.Mainmanager"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".technician.Maintechnician"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".head_division.Mainhead_division"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".user.Mainuser"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".login_regist.Register"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".login_regist.Login"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

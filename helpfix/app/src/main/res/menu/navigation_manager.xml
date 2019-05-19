@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home"
+        android:title="หน้าหลัก"
+        />
+
+    <item
+        android:id="@+id/ApprovalRequest"
+        android:icon="@drawable/ic_library_books"
+        android:title="รออนุมัติ"
+        />
+    <item
+        android:id="@+id/ReportDashboard"
+        android:icon="@drawable/ic_dashboard_g"
+        android:title="รายงาน"
+        />
+    <item
+        android:id="@+id/ApprovedApplication"
+        android:icon="@drawable/ic_assignment_g"
+        android:title="อนุมัติแล้ว"
+        />
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home"
+        android:title="หน้าหลัก"
+        />
+
+    <item
+        android:id="@+id/RepairApplication"
+        android:icon="@drawable/ic_library_books"
+        android:title="งานซ่อม"
+        />
+    <item
+        android:id="@+id/CompletedRepair"
+        android:icon="@drawable/ic_find_in_g"
+        android:title="งานซ่อมเสร็จ"
+        />
+    <item
+        android:id="@+id/ApprovalWait"
+        android:icon="@drawable/ic_assignment_g"
+        android:title="รออนุมัติ"
+        />
+    <item
+        android:id="@+id/ApplicationsClosed"
+        android:icon="@drawable/ic_build_g"
+        android:title="ซ่อมได้"
+        />
+
+</menu>

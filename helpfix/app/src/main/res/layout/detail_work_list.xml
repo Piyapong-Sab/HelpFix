@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".head_division.Detail_work_list"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_fix" />
+
+            <TextView
+                android:id="@+id/USERID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtissue"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="เลขที่ใบคำร้อง :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/issueID"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="issueID"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAssessment_date"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="วันที่มอบหมายงาน :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Assessment_date"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assessment_date"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtPriority"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="ความสำคัญของงาน :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Priority"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Priority"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAssessment_by"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="ช่างที่รับผิดชอบ :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Assessment_by"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assessment_by"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtcategory"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="หมวดหมูงาน :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="category"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtsubcategory"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="หมวดหมูงานย่อย :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subcategory"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="subcategory"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtproblem"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="ปัญหาแจ้งซ่อม :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Problem"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:text="Problem"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtplace"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="สถานที่ :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Place"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Place"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtlevel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="ชั้น / ห้อง :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Level"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Level"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtApprove_status"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="สถานะ :"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="status"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="รูปปัญหาที่แจ้งซ่อม"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/Pic_issue"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/logo_fix" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_backhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_capsult"
+            android:text="กลับสู่หน้าหลัก" />
+
+    </LinearLayout>
+</LinearLayout>
