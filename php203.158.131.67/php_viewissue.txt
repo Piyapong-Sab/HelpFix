@@ -1,0 +1,40 @@
+<?php 
+
+    include('connect.php');
+
+    $LogID = $_POST['LogID'];
+
+
+$mysql_query= "SELECT 	iss.Id_issue , iss.Record_date , iss.Problem , iss.Pic_issue , st.Status_name ,iss.Place , iss.Level
+FROM issue iss INNER JOIN status st 
+ON st.Id_status = iss.Id_status
+WHERE Create_by = '$LogID' ;";
+
+
+$response = mysqli_query($conn,$mysql_query);
+
+$result = array();
+$result['view']= array();
+
+if(mysqli_num_rows($response)>0){
+ // output data of each row
+ while($row[] = mysqli_fetch_assoc($response)) { 
+ $tem = $row;
+ $json = json_encode($tem);
+ /*
+ array_push($result['view'],$tem);
+ $result['success']="1";
+ $result['message'] ="success";
+  $json = json_encode($result);
+*/
+ }
+
+} else {
+ echo "0 results";
+}
+ echo $json;
+
+mysqli_close($conn); 
+
+?> 
+
